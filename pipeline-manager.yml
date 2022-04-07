@@ -8,12 +8,12 @@ resources:
   - name: source-code
     type: git-branches
     source:
-      uri: https://github.com/price-stalker
+      uri: https://github.com/j3tchy/price-stalker.git
   
   - name: concourse-pipelines
     type: git
     source:
-      uri: https://github.com/concourse-pipelines
+      uri: https://github.com/j3tchy/concourse-pipelines.git
 
 jobs:
   - name: set-feature-pipelines
