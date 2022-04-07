@@ -6,14 +6,16 @@ resources_types:
 
 resources:
   - name: source-code
-    type: git-branches
+    type: git
     source:
-      uri: https://github.com/j3tchy/price-stalker.git
+      uri: git@github.com:j3tchy/price-stalker.git
+      private_key: ((private_key))
   
   - name: concourse-pipelines
     type: git
     source:
-      uri: https://github.com/j3tchy/concourse-pipelines.git
+      uri: git@github.com:j3tchy/concourse-pipelines.git
+      private_key: ((private_key))
 
 jobs:
   - name: set-feature-pipelines
